@@ -2,6 +2,10 @@
 #set -x
 
 # Running coverity for examples-afu
+#
+# Make sure you have these resources:
+#   >> arc shell coverity/2022.03.01 intel_opae gcc/9.3.0
+#
 #	- cov-configure --gcc --config output.xml
 #	- cov-build --config output.xml --dir coverity_results make
 #	- cov-analyze --config output.xml --dir coverity_results --concurrency --security --rule --enable-constraint-fpp --enable-fnptr --enable-virtual
